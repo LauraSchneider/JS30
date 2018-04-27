@@ -1,0 +1,41 @@
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    min-height:100vh;
+}
+
+.clock {
+    height: 30rem;
+    width: 30rem;
+    border: 20px solid rgb(255, 0, 176);
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.1), inset 0 0 0 3px #8c0088, inset 0 0 0px red, 0 0 10px rgba(0, 80, 245, 0.2);
+}
+
+.surface {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand {
+    height: 6px;
+    width: 50%;
+    top: 50%;
+    background: #30ff22;
+    position: absolute;
+    transform-origin: 100%;
+    transform:rotate(90deg);
+    /* transition: all 0.05s; */
+    transition-timing-function: cubic-bezier(0.91, 2.43, 1, 1);
+}
